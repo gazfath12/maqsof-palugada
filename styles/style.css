@@ -1,0 +1,296 @@
+/* tampilan mobile */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Figtree", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.wraping {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 0px 8px;
+  max-width: 1536px;
+}
+/* menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar nav {
+  width: 15%;
+}
+.navbar nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20%;
+  padding: 0px;
+  justify-content: space-around;
+}
+.navbar nav ul li a {
+  text-decoration: none;
+}
+
+/* button loogin */
+.navbar .btn-login a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+}
+.navbar .btn-login a:hover {
+  background-color: black;
+}
+/* hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.hero .cta {
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .cta .btn-cta a {
+  text-decoration: none;
+}
+.hero .cta .btn-cta {
+  display: flex;
+  gap: 10px;
+  padding: 0px;
+}
+.hero .cta .btn-cta a:nth-child(1) {
+  padding: 13px 20px;
+  background-color: orange;
+  color: white;
+  transition: 1sec;
+  border-radius: 8px;
+}
+.hero .cta h2 {
+  font-size: clamp(4rem, 4vw, 110px);
+  margin: 0px;
+}
+.hero .cta p {
+  margin: 5px 0px 20px 0px;
+  width: 80%;
+  text-align: center;
+}
+.hero .cta .btn-cta a:nth-child(2) {
+  padding: 13px 20px;
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+}
+
+.hero .wrap-img img {
+  width: 80%;
+}
+.hero .wrap-img {
+  justify-content: center;
+  display: flex;
+}
+/* ini bagian puduk */
+.produk {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2%;
+}
+.produk .card {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 10px 0px;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+  box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+  padding: 10px;
+}
+.produk .card > img {
+  width: 90%;
+  align-self: center;
+  width: 100%;
+}
+.produk .card > .btn-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+}
+.produk .card .btn-card > h3 {
+  margin: 10px 0px;
+  font-size: 14px;
+}
+.produk .card .btn-card >a {
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 4px;
+}
+.produk .card > p {
+ margin: 0px;
+ font-size: 14px;
+}
+.produk .card > h3 {
+  margin: 5px 0px;
+  font-size: 16px;
+}
+.blogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.blogs .card {
+  width: 45%;
+  margin-top: 10px 0px;
+  flex-direction: column;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+  box-shadow: 0px 0px 2px 0px rgba(201, 201, 201, 1);
+}
+.blogs .card img {
+ width: 100%;
+ align-self: center;
+}
+.blogs .card a {
+  text-decoration: none;
+}
+.blogs .card .descripsi {
+  padding: 0px 10px 10px 10px;
+} 
+.blogs .card .descripsi > p {
+  margin: 10px 0px;
+  font-size: 14px;
+}
+.blogs .card .descripsi > h3 {
+  margin: 10px 0px 0px 0px;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin: 50px 0px;
+}
+footer .one .sosial-media a {
+  text-decoration: none;
+  color: black;
+}
+footer .one .sosial-media {
+  gap: 20px;
+  display: flex;
+}
+footer .two a {
+  text-decoration: none;
+  color: black;
+
+}
+footer .one {
+  width: 100%;
+}
+footer .two {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer .three a {
+  text-decoration: none;
+  color: black;
+}
+footer .three {
+width: 50%;
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.maqsof img{
+  padding-top: 60px;
+}
+/* tamppilan tab,et */
+@media (min-width: 768px) {
+  .container {
+    padding: 0px 35px;
+  }
+  /* hero */
+  .hero {
+    display: flex;
+    margin-top: 40px;
+  }
+  .hero .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+    order: 2;
+  }
+  .hero .wrap-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .hero .cta h2 {
+    font-size: clamp(35px, 5rem, 120px);
+    margin: 0px;
+    padding: 0px;
+  }
+  .hero .cta p {
+    text-align: left;
+    width: 100%;
+  }
+  .hero .wrap-img img {
+    width: 65%;
+  }
+  .hero .cta p span {
+    padding: 0px;
+    margin: 0px;
+  }
+  /* prudok */
+  .produk {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .produk .card {
+    width: 20%;
+  }
+/* blogs */
+ .blogs .card {
+  width: 22%;
+ }
+  /* foter */
+  footer {
+    flex-wrap: nowrap;
+  }
+  footer .one {
+    width: 45%;
+  }
+  footer .two {
+    width: 25%;
+  }
+  footer .three {
+    width: 25%;
+  }
+}
+
+/* tampilan laptop */
+@media (min-width: 1024px) {
+}
+/* tampilan desktop */
+@media (min-width: 1280px) {
+}
